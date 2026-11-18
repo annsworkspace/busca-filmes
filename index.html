@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="/img/614ef5e7a735608b2cb006d9f7984522.jpg">
+</head>
+<body>
+    
+    <main>
+
+         <section class="hero" aria-labelledby="hero-title"> 
+          <!--arialabelledby is an attribute to give a descriptive name-->
+          <p class="hero-kicker" data-i18n="home.kicker">Movie Search</p>
+          <h1 id="hero-title" data-i18n="home.heroTitle"></h1>
+          <p data-i18n="home.heroDescription">Made to help facilitate your everyday searches</p>
+          <!-- heroDescription will target main body -->
+          <a href="#products" class="hero-link"><span data-i18n="home.explore">Explore movies</span> <span aria-hidden="true">↓</span></a>
+          <!-- takes down to the products -->
+        </section>
+
+         <div class="catalog-status">
+              <button id="search-toggle" class="search-toggle" type="button" aria-label="Open product search" data-i18n-aria-label="home.openSearch" aria-expanded="false" aria-controls="product-search-form">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+              </button>
+              <p id="product-message" role="status" aria-live="polite" data-i18n="home.loading">Loading movies…</p>
+        </div>
+
+    </main>
+
+</body>
+</html>

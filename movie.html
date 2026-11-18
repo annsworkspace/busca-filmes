@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do filme | Movie Search</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="movie.js" defer></script>
+</head>
+<body>
+  <main class="movie-detail-page">
+    <a class="back-link" href="index.html">← Voltar aos filmes</a>
+    <p id="detail-message" role="status" aria-live="polite">Carregando informações do filme…</p>
+
+    <article id="movie-detail" class="movie-detail" hidden>
+      <img id="detail-poster" alt="">
+      <div class="movie-detail-copy">
+        <p class="detail-kicker">Detalhes do filme</p>
+        <h1 id="detail-title"></h1>
+        <p id="detail-year"></p>
+        <p id="detail-rating" class="detail-rating"></p>
+        <div class="detail-facts">
+          <p id="detail-genre"></p>
+          <p id="detail-director"></p>
+          <p id="detail-cast"></p>
+          <p id="detail-plot" class="detail-plot"></p>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
